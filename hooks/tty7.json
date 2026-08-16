@@ -1,0 +1,71 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/Applications/tty7.app/Contents/MacOS/tty7-app\" agent-hook grok session-start",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/Applications/tty7.app/Contents/MacOS/tty7-app\" agent-hook grok prompt-submit",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/Applications/tty7.app/Contents/MacOS/tty7-app\" agent-hook grok notification",
+            "timeout": 10
+          }
+        ],
+        "matcher": "elicitation_dialog"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/Applications/tty7.app/Contents/MacOS/tty7-app\" agent-hook grok tool-complete",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/Applications/tty7.app/Contents/MacOS/tty7-app\" agent-hook grok stop",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/Applications/tty7.app/Contents/MacOS/tty7-app\" agent-hook grok session-end",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
