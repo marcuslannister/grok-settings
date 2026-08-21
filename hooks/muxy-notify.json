@@ -1,0 +1,52 @@
+{
+  "hooks" : {
+    "Notification" : [
+      {
+        "hooks" : [
+          {
+            "command" : "'\/Users\/ken\/Library\/Application Support\/Muxy\/hooks\/muxy-grok-hook.sh' notification # muxy-notification-hook",
+            "timeout" : 10,
+            "type" : "command"
+          }
+        ],
+        "matcher" : ""
+      }
+    ],
+    "PreToolUse" : [
+      {
+        "hooks" : [
+          {
+            "command" : "'\/Users\/ken\/Library\/Application Support\/Muxy\/hooks\/muxy-grok-hook.sh' pre-tool-use # muxy-notification-hook",
+            "timeout" : 10,
+            "type" : "command"
+          }
+        ],
+        "matcher" : ""
+      }
+    ],
+    "Stop" : [
+      {
+        "hooks" : [
+          {
+            "command" : "'\/Users\/ken\/Library\/Application Support\/Muxy\/hooks\/muxy-grok-hook.sh' stop # muxy-notification-hook",
+            "timeout" : 10,
+            "type" : "command"
+          }
+        ],
+        "matcher" : ""
+      }
+    ],
+    "UserPromptSubmit" : [
+      {
+        "hooks" : [
+          {
+            "command" : "'\/Users\/ken\/Library\/Application Support\/Muxy\/hooks\/muxy-grok-hook.sh' user-prompt-submit # muxy-notification-hook",
+            "timeout" : 10,
+            "type" : "command"
+          }
+        ],
+        "matcher" : ""
+      }
+    ]
+  }
+}
