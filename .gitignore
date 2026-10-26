@@ -4,3 +4,8 @@
 !config.toml
 !hooks/
 !hooks/**
+
+# CI
+!.github/
+!.github/workflows/
+!.github/workflows/*.yml
