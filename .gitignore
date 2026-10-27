@@ -1,6 +1,7 @@
 *
 
 !.gitignore
+!CHANGELOG.md
 !config.toml
 !hooks/
 !hooks/**
